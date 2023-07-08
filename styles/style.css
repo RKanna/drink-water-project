@@ -63,6 +63,7 @@ h2 {
   border-bottom-right-radius: 3rem;
   border-bottom-left-radius: 3rem;
   border: 5px solid #144fc6;
+  position: relative;
 }
 .center-text {
   margin-top: 1rem;
@@ -180,7 +181,7 @@ li {
   background-color: #6ab3f8;
   border-bottom-right-radius: 2.7rem;
   border-bottom-left-radius: 2.7rem;
-  margin-top: -0.9rem;
+  margin-top: 0rem;
 }
 
 .twobyfour-level {
@@ -189,5 +190,17 @@ li {
   background-color: #6ab3f8;
   border-bottom-right-radius: 2.7rem;
   border-bottom-left-radius: 2.7rem;
-  margin-top: -2.9rem;
+  margin-top: -0.1rem;
+}
+.fill-heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#filler-percentage {
+}
+.filler-dynamic-change {
+  position: absolute;
+  top: 10rem;
 }
