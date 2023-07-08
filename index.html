@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="
+    text/css"
+      href="./styles/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <title>Drink-Water-Project</title>
+    <link rel="shortcut icon" href="icons/calculator.png" type="image/x-icon" />
+  </head>
+  <body>
+    <section class="header-section flex-class">
+      <h1>Drink Water</h1>
+      <h3>Goal: 2 Liters</h3>
+    </section>
+    <section class="main-glass flex-class">
+      <div class="big-glass flex-class">
+        <h2 class="internal-heading">2L</h2>
+        <span class="glass-para">Remained</span>
+
+        <div class="filling">
+          <div class="flex-class" id="filling">
+            <h2 id="filler-percentage"></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="center-text flex-class">
+      <span class="below-text"
+        >Select how many glasses of water that you have drank</span
+      >
+    </div>
+    <section class="lower-glass-container flex-class">
+      <div class="small-glass-row">
+        <div class="small-glass" onclick="clickEle()" id="small-glass-One">
+          <ul class="flex-class">
+            <li>250</li>
+            <li>ml</li>
+          </ul>
+        </div>
+        <div class="small-glass" id="small-glass-Two">
+          <ul class="flex-class">
+            <li>250</li>
+            <li>ml</li>
+          </ul>
+        </div>
+        <div class="small-glass" id="small-glass-Three">
+          <ul class="flex-class">
+            <li>250</li>
+            <li>ml</li>
+          </ul>
+        </div>
+        <div class="small-glass" id="small-glass-four">
+          <ul class="flex-class">
+            <li>250</li>
+            <li>ml</li>
+          </ul>
+        </div>
+      </div>
+      <div class="small-glass-row">
+        <div class="small-glass" id="small-glass-five">
+          <ul class="flex-class">
+            <li>250</li>
+            <li>ml</li>
+          </ul>
+        </div>
+        <div class="small-glass" id="small-glass-six">
+          <ul class="flex-class">
+            <li>250</li>
+            <li>ml</li>
+          </ul>
+        </div>
+        <div class="small-glass" id="small-glass-seven">
+          <ul class="flex-class">
+            <li>250</li>
+            <li>ml</li>
+          </ul>
+        </div>
+        <div class="small-glass" id="small-glass-eight">
+          <ul class="flex-class">
+            <li>250</li>
+            <li>ml</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
