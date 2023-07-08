@@ -1,6 +1,7 @@
 "use strict";
-
+let mainHeading = document.getElementById("main-heading");
 let fillerEle = document.querySelectorAll(".small-glass");
+let mainSpanElement = document.getElementById("main-span");
 
 let fillerFil = document.getElementById("filling");
 window.addEventListener("click", function (event) {
@@ -68,5 +69,40 @@ window.addEventListener("click", function (event) {
 
   for (const element of differentFiller) {
     console.log(element);
+  }
+
+  if (classToAdd === differentFiller[0]) {
+    fillerPercentage.innerText = "12.5%";
+    mainHeading.innerText = "1.75L";
+  } else if (classToAdd === differentFiller[1]) {
+    fillerPercentage.innerText = "25%";
+    mainHeading.innerText = "1.5L";
+  } else if (classToAdd === differentFiller[2]) {
+    fillerPercentage.innerText = "37.5%";
+    mainHeading.innerText = "1.25L";
+  } else if (classToAdd === differentFiller[3]) {
+    fillerPercentage.innerText = "50%";
+    mainHeading.innerText = "1L";
+    fillerPercentage.classList.add("filler-dynamic-change");
+  } else if (classToAdd === differentFiller[4]) {
+    fillerPercentage.innerText = "62.5%";
+    mainHeading.innerText = "0.75L";
+  } else if (classToAdd === differentFiller[5]) {
+    fillerPercentage.innerText = "75%";
+    mainHeading.innerText = "0.5L";
+  } else if (classToAdd === differentFiller[6]) {
+    fillerPercentage.innerText = "87.5%";
+    mainHeading.innerText = "0.25L";
+    mainHeading.style.fontSize = "1rem";
+    mainSpanElement.style.fontSize = "0.7rem";
+    if (mainHeading.style.fontSize === "1rem") {
+      mainHeading.style.fontSize = "";
+      mainSpanElement.innerText = "Remained";
+      mainSpanElement.style.fontSize = "";
+    }
+  } else if (classToAdd === differentFiller[7]) {
+    fillerPercentage.innerText = "100%";
+    mainHeading.innerText = "";
+    mainSpanElement.innerText = "";
   }
 });
