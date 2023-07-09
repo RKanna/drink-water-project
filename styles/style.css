@@ -177,7 +177,7 @@ li {
 
 .twobythree-level {
   width: 8.9rem;
-  height: 17.5rem;
+  height: 16.5rem;
   background-color: #6ab3f8;
   border-bottom-right-radius: 2.7rem;
   border-bottom-left-radius: 2.7rem;
@@ -204,3 +204,11 @@ li {
   position: absolute;
   top: 10rem;
 }
+/* .temp-class {
+  width: 8.9rem;
+  height: 2.9rem;
+  background-color: #6ab3f8;
+  border-bottom-right-radius: 2.7rem;
+  border-bottom-left-radius: 2.7rem;
+  margin-top: 12.7rem;
+} */
