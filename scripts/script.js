@@ -71,6 +71,7 @@ window.addEventListener("click", function (event) {
     console.log(element);
   }
 
+  // if (differentFiller[i].classList.toggle("active")) {
   if (classToAdd === differentFiller[0]) {
     fillerPercentage.innerText = "12.5%";
     mainHeading.innerText = "1.75L";
@@ -83,6 +84,7 @@ window.addEventListener("click", function (event) {
   } else if (classToAdd === differentFiller[3]) {
     fillerPercentage.innerText = "50%";
     mainHeading.innerText = "1L";
+
     fillerPercentage.classList.add("filler-dynamic-change");
   } else if (classToAdd === differentFiller[4]) {
     fillerPercentage.innerText = "62.5%";
@@ -105,4 +107,8 @@ window.addEventListener("click", function (event) {
     mainHeading.innerText = "";
     mainSpanElement.innerText = "";
   }
+
+  // if (differentFiller[i].classList.toggle("active")) {
+  //   differentFiller[0].classList.add("below-half-level");
+  // }
 });
